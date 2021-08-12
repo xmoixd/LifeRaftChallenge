@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "8c3e4a13-fcf1-42db-814f-f81acb08a7f5",
+		"name": "LifeRaftChallengeMoises",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":  \"moises@mail.com\",\n    \"phoneNumber\":  \"1234567\",\n    \"name\":  \"Moises\",\n    \"address\": {\n        \"stateProvince\" : \"mine\",\n        \"city\": \"mycity\",\n        \"houseNumber\": 768,\n        \"street\": \"mystreet\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/customers/create/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers",
+						"create",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListCustomers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/customers/get/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers",
+						"get",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/customers/get/customer/6115503eb6257c00f13c65a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers",
+						"get",
+						"customer",
+						"6115503eb6257c00f13c65a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCustomer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":  \"moises@mail.es\",\n    \"phoneNumber\":  \"1234567\",\n    \"name\":  \"Moises\",\n    \"address\": {\n        \"stateProvince\" : \"mine\",\n        \"city\": \"mycity\",\n        \"houseNumber\": 768,\n        \"street\": \"mystreet\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/customers/put/customer/6115503eb6257c00f13c65a5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers",
+						"put",
+						"customer",
+						"6115503eb6257c00f13c65a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCustomer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/customers/delete/customer/61155099869ab300fcb882fc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"customers",
+						"delete",
+						"customer",
+						"61155099869ab300fcb882fc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
