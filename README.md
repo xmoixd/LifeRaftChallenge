@@ -17,6 +17,6 @@ there are two ways to start working with this project
 
 Usage
  - There is a file named **LifeRaftChallengeMoises.postman_collection.json**
-  you can use to import the api to your postman and play around with it
+  you can use it to import the api to your postman and play around with it
    
 
